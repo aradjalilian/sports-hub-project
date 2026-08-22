@@ -1,3 +1,115 @@
 from django.db import models
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
+from django.contrib.auth.base_user import BaseUserManager
+from django.utils import timezone
 
-# Create your models here.
+class Role(models.Model):
+    role_id = models.CharField(max_length=10, primary_key=True)
+    role_name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.role_name
+
+class UserManager(BaseUserManager):
+
+    def create_user(self, email, password=None, **extra_fields):
+        if not email:
+            raise ValueError("The email field is required.")
+
+        email = self.normalize_email(email)
+        user = self.model(email=email, **extra_fields)
+
+        if password:
+            user.set_password(password)
+
+        user.save(using=self._db)
+        return user
+
+    def create_superuser(self, email, password=None, **extra_fields):
+        extra_fields.setdefault("is_staff", True)
+        extra_fields.setdefault("is_superuser", True)
+        extra_fields.setdefault("is_active", True)
+
+        if not extra_fields.get("is_staff"):
+            raise ValueError("Superuser must have is_staff=True.")
+
+        if not extra_fields.get("is_superuser"):
+            raise ValueError("Superuser must have is_superuser=True.")
+
+        return self.create_user(
+            email=email,
+            password=password,
+            **extra_fields
+        )
+
+class User(AbstractBaseUser, PermissionsMixin):
+    email = models.EmailField(unique=True)
+    role = models.ForeignKey(Role, on_delete=models.CASCADE)
+    date_joined = models.DateTimeField(default=timezone.now)
+    is_active = models.BooleanField(default=True)
+    is_staff = models.BooleanField(default=False)
+
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = []
+
+    objects = UserManager()
+
+    def __str__(self):
+        return self.email
+
+class Product(models.Model):
+    product_id = models.CharField(max_length=10, primary_key=True)
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    stock = models.IntegerField()
+    status = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+class Order(models.Model):
+    order_id = models.CharField(max_length=10, primary_key=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    order_date = models.DateField()
+    total_price = models.DecimalField(max_digits=10, decimal_places=2)
+    status = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.order_id
+
+class OrderItem(models.Model):
+    order = models.ForeignKey(
+        Order,
+        on_delete=models.CASCADE,
+        related_name="items"
+    )
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.IntegerField()
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+
+    class Meta:
+        unique_together = ("order", "product")
+
+    def __str__(self):
+        return f"{self.order.order_id} - {self.product.name}"
+
+class Return(models.Model):
+    return_id = models.CharField(max_length=10, primary_key=True)
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    reason = models.CharField(max_length=255)
+    status = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.return_id
+
+class Refund(models.Model):
+    refund_id = models.CharField(max_length=10, primary_key=True)
+    return_request = models.ForeignKey(Return, on_delete=models.CASCADE)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    refund_date = models.DateField()
+    status = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.refund_id

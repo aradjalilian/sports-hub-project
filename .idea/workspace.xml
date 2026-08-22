@@ -37,6 +37,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="3HjmjPnLNOTyUb24L3AyQ6LXO9j" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,6 +75,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update database settings to use PostGreSQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update database settings to use PostGreSQL" />
+    <MESSAGE value="Delete unused comments in settings.py file" />
+    <MESSAGE value="- Change auth to custom email User model&#10;- Create models and relationships in models.py&#10;- Create and activate the Python virtual environment&#10;- Add .gitignore file to the root directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Change auth to custom email User model&#10;- Create models and relationships in models.py&#10;- Create and activate the Python virtual environment&#10;- Add .gitignore file to the root directory" />
   </component>
 </project>
