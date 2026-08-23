@@ -15,7 +15,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'SportShop.apps.SportshopConfig',
+    'SportsHub.apps.SportHubConfig',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,7 @@ WSGI_APPLICATION = 'sports-hub-project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sports_shopdb',
+        'NAME': 'sportshub_db',
         'USER': 'admin',
         'PASSWORD': 'admin',
         'HOST': 'localhost',
@@ -74,7 +74,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = 'SportShop.User'
+AUTH_USER_MODEL = 'SportsHub.User'
 
 LANGUAGE_CODE = 'en-us'
 
