@@ -1,0 +1,52 @@
+[
+{
+    "model": "SportShop.orderitem",
+    "pk": 1,
+    "fields": {
+        "order": "O1",
+        "product": "P1",
+        "quantity": 1,
+        "price": "20.00"
+    }
+},
+{
+    "model": "SportShop.orderitem",
+    "pk": 2,
+    "fields": {
+        "order": "O2",
+        "product": "P2",
+        "quantity": 1,
+        "price": "30.00"
+    }
+},
+{
+    "model": "SportShop.orderitem",
+    "pk": 3,
+    "fields": {
+        "order": "O3",
+        "product": "P3",
+        "quantity": 1,
+        "price": "40.00"
+    }
+},
+{
+    "model": "SportShop.orderitem",
+    "pk": 4,
+    "fields": {
+        "order": "O4",
+        "product": "P4",
+        "quantity": 1,
+        "price": "50.00"
+    }
+},
+{
+    "model": "SportShop.orderitem",
+    "pk": 5,
+    "fields": {
+        "order": "O5",
+        "product": "P5",
+        "quantity": 1,
+        "price": "60.00"
+    }
+}
+]

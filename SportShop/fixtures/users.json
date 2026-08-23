@@ -1,0 +1,82 @@
+[
+{
+    "model": "SportShop.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1500000$tJfnQ5fOPL5Xtz2mdhUhLM$RjSrfPtfZtVSj6rBX5d2UnUVrGfAExxKKj9cyN3BwNw=",
+        "last_login": "2026-08-23T13:05:18.968Z",
+        "is_superuser": true,
+        "email": "admin@sportsshop.ie",
+        "role": "R1",
+        "date_joined": "2026-08-22T21:38:26.013Z",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "SportShop.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$1500000$cGL7s9spe4CDO8XWV8IsAZ$kZ3L4SyK4UOD76UEdDA61qawQVcALL3QazEbLTcmSv4=",
+        "last_login": "2026-08-22T22:10:56.885Z",
+        "is_superuser": false,
+        "email": "manager@sportsshop.ie",
+        "role": "R2",
+        "date_joined": "2026-08-22T21:46:46.247Z",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "SportShop.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$1500000$NyI15fGXyCpBqtK585Nmgy$LFd00+QGUI80pmgcVZiW4PCqCoVqlN3e75Hs/2H2dk8=",
+        "last_login": null,
+        "is_superuser": false,
+        "email": "staff@sportsshop.ie",
+        "role": "R3",
+        "date_joined": "2026-08-22T21:46:53.776Z",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "SportShop.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1500000$dQ6o2Fa9Hs0OceYlJ1dKLp$LibB+yeSvGZ1AT8sdqOnnonXj1RXO+Znq1dD1fOrP4w=",
+        "last_login": null,
+        "is_superuser": false,
+        "email": "customerservice@sportsshop.ie",
+        "role": "R4",
+        "date_joined": "2026-08-22T21:47:02.222Z",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "SportShop.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$1500000$G7YYsqvEdgDFenwpsqW9Ja$lefxQqlhmFOtB9rZhTg6tNUqPNkiyjTxu8OycdUj7A0=",
+        "last_login": null,
+        "is_superuser": false,
+        "email": "customer@sportsshop.ie",
+        "role": "R5",
+        "date_joined": "2026-08-22T21:47:09.390Z",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

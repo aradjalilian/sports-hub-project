@@ -1,0 +1,37 @@
+[
+{
+    "model": "SportShop.role",
+    "pk": "R1",
+    "fields": {
+        "role_name": "Admin"
+    }
+},
+{
+    "model": "SportShop.role",
+    "pk": "R2",
+    "fields": {
+        "role_name": "Manager"
+    }
+},
+{
+    "model": "SportShop.role",
+    "pk": "R3",
+    "fields": {
+        "role_name": "Staff"
+    }
+},
+{
+    "model": "SportShop.role",
+    "pk": "R4",
+    "fields": {
+        "role_name": "Customer Service"
+    }
+},
+{
+    "model": "SportShop.role",
+    "pk": "R5",
+    "fields": {
+        "role_name": "Customer"
+    }
+}
+]
