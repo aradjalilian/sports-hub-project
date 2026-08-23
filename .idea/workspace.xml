@@ -75,6 +75,7 @@
     <MESSAGE value="Update database settings to use PostGreSQL" />
     <MESSAGE value="Delete unused comments in settings.py file" />
     <MESSAGE value="- Change auth to custom email User model&#10;- Create models and relationships in models.py&#10;- Create and activate the Python virtual environment&#10;- Add .gitignore file to the root directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Change auth to custom email User model&#10;- Create models and relationships in models.py&#10;- Create and activate the Python virtual environment&#10;- Add .gitignore file to the root directory" />
+    <MESSAGE value="- Created admin and customer users with assigned roles&#10;- Added order administration with relevant order fields&#10;- Created sample sports products for app testing&#10;- Created order model for purchase management&#10;- Added sample returns and refunds for app testing&#10;- Added fixtures for SportShop app data" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Created admin and customer users with assigned roles&#10;- Added order administration with relevant order fields&#10;- Created sample sports products for app testing&#10;- Created order model for purchase management&#10;- Added sample returns and refunds for app testing&#10;- Added fixtures for SportShop app data" />
   </component>
 </project>
