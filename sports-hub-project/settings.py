@@ -28,7 +28,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'sportshop_project.urls'
+ROOT_URLCONF = 'sports-hub-project.urls'
 
 TEMPLATES = [
     {
@@ -46,7 +46,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'sportshop_project.wsgi.application'
+WSGI_APPLICATION = 'sports-hub-project.wsgi.application'
 
 DATABASES = {
     'default': {

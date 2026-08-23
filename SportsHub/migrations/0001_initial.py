@@ -48,8 +48,8 @@ class Migration(migrations.Migration):
                 ('return_id', models.CharField(max_length=10, primary_key=True, serialize=False)),
                 ('reason', models.CharField(max_length=255)),
                 ('status', models.CharField(max_length=50)),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportShop.order')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportShop.product')),
+                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportsHub.order')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportsHub.product')),
             ],
         ),
         migrations.CreateModel(
@@ -59,7 +59,7 @@ class Migration(migrations.Migration):
                 ('amount', models.DecimalField(decimal_places=2, max_digits=10)),
                 ('refund_date', models.DateField()),
                 ('status', models.CharField(max_length=50)),
-                ('return_request', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportShop.return')),
+                ('return_request', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportsHub.return')),
             ],
         ),
         migrations.CreateModel(
@@ -74,7 +74,7 @@ class Migration(migrations.Migration):
                 ('is_active', models.BooleanField(default=True)),
                 ('is_staff', models.BooleanField(default=False)),
                 ('groups', models.ManyToManyField(blank=True, help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.', related_name='user_set', related_query_name='user', to='auth.group', verbose_name='groups')),
-                ('role', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportShop.role')),
+                ('role', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportsHub.role')),
                 ('user_permissions', models.ManyToManyField(blank=True, help_text='Specific permissions for this user.', related_name='user_set', related_query_name='user', to='auth.permission', verbose_name='user permissions')),
             ],
             options={
@@ -92,8 +92,8 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('quantity', models.IntegerField()),
                 ('price', models.DecimalField(decimal_places=2, max_digits=10)),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='items', to='SportShop.order')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportShop.product')),
+                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='items', to='SportsHub.order')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='SportsHub.product')),
             ],
             options={
                 'unique_together': {('order', 'product')},
