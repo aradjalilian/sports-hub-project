@@ -1,0 +1,171 @@
+.home-hero {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.home-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home-hero .lead {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.auth-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+
+.auth-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.auth-links a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    padding: 2rem;
+}
+
+.profile-field {
+    margin-bottom: 1rem;
+}
+
+.profile-field:last-child {
+    margin-bottom: 0;
+}
+
+.profile-label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.dashboard-card {
+    height: 100%;
+}
+
+.dashboard-stat {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.products-grid {
+    row-gap: 1.5rem;
+}
+
+.product-detail-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.product-stock {
+    font-weight: 500;
+}
+
+.cart-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cart-summary {
+    padding: 1.5rem;
+}
+
+.cart-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.orders-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.order-card {
+    margin-bottom: 1.5rem;
+}
+
+.order-total {
+    font-weight: 700;
+}
+
+.returns-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.return-card {
+    margin-bottom: 1.5rem;
+}
+
+.refunds-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.refund-card {
+    margin-bottom: 1.5rem;
+}
+
+.passkeys-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.passkey-card {
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .home-hero {
+        padding: 3.5rem 1rem;
+    }
+
+    .home-hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .profile-card,
+    .passkey-card {
+        padding: 1.25rem;
+    }
+}

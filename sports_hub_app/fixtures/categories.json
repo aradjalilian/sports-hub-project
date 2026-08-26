@@ -1,0 +1,34 @@
+[
+  {
+    "model": "sports_hub_app.category",
+    "pk": "C1",
+    "fields": {
+      "name": "Football",
+      "description": "Football equipment and clothing."
+    }
+  },
+  {
+    "model": "sports_hub_app.category",
+    "pk": "C2",
+    "fields": {
+      "name": "Basketball",
+      "description": "Basketball equipment and clothing."
+    }
+  },
+  {
+    "model": "sports_hub_app.category",
+    "pk": "C3",
+    "fields": {
+      "name": "Tennis",
+      "description": "Tennis equipment and clothing."
+    }
+  },
+  {
+    "model": "sports_hub_app.category",
+    "pk": "C4",
+    "fields": {
+      "name": "Running",
+      "description": "Running shoes and running equipment."
+    }
+  }
+]

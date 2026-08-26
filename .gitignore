@@ -1,16 +1,22 @@
-# Virtual environment
-.venv/
+# Django static files
+staticfiles/
 
-# Python cache
-__pycache__/
-*.py[cod]
-
-# Environment variable
+# Environment variables
 .env
 
 # IDE
 .idea/
 
-# Windows
+# OS generated files
 Thumbs.db
 desktop.ini
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Testing cache
+.pytest_cache/
+
+# Virtual environment
+.venv/

@@ -1,0 +1,32 @@
+[
+{
+    "model": "sports_hub_app.refund",
+    "pk": "RF1",
+    "fields": {
+        "return_request": "R1",
+        "amount": "20.00",
+        "refund_date": "2026-08-26",
+        "status": "Completed"
+    }
+},
+{
+    "model": "sports_hub_app.refund",
+    "pk": "RF2",
+    "fields": {
+        "return_request": "R2",
+        "amount": "30.00",
+        "refund_date": "2026-08-27",
+        "status": "Completed"
+    }
+},
+{
+    "model": "sports_hub_app.refund",
+    "pk": "RF3",
+    "fields": {
+        "return_request": "R3",
+        "amount": "40.00",
+        "refund_date": "2026-08-28",
+        "status": "Completed"
+    }
+}
+]

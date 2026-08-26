@@ -1,0 +1,30 @@
+{% extends "sports_hub_app/base.html" %}
+
+{% block title %}Products | SportsHub{% endblock %}
+
+{% block content %}
+
+<h1 class="text-center">Sports Hub Products</h1>
+
+{% for product in products %}
+    <div class="card mb-3">
+        <div class="card-body">
+
+            <h2 class="card-title">
+                <a href="{% url 'product_detail' product.product_id %}">
+                    {{ product.name }}
+                </a>
+            </h2>
+
+            <p class="card-text">{{ product.description }}</p>
+            <p><strong>Price:</strong> €{{ product.price }}</p>
+            <p><strong>Stock:</strong> {{ product.stock }}</p>
+            <p><strong>Status:</strong> {{ product.status }}</p>
+
+        </div>
+    </div>
+{% empty %}
+    <p>No products available.</p>
+{% endfor %}
+
+{% endblock %}

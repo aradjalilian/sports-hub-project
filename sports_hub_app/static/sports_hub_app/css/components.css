@@ -1,0 +1,102 @@
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.card {
+    border-radius: 0.75rem;
+    border: 1px solid #dee2e6;
+    overflow: hidden;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.product-card {
+    height: 100%;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-text {
+    flex-grow: 1;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    padding: 0.65rem 0.75rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.alert {
+    border-radius: 0.5rem;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+.table {
+    vertical-align: middle;
+}
+
+.table th {
+    font-weight: 600;
+}
+
+.page-link {
+    border-radius: 0.4rem;
+}
+
+.empty-state {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border: 1px dashed #ced4da;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+}
+
+.empty-state h2,
+.empty-state h3 {
+    margin-bottom: 0.75rem;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 576px) {
+    .product-card img {
+        height: 180px;
+    }
+
+    .empty-state {
+        padding: 2rem 1rem;
+    }
+}

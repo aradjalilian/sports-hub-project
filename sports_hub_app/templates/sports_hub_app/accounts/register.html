@@ -1,0 +1,78 @@
+{% extends "sports_hub_app/base.html" %}
+
+{% block title %}Register | SportsHub{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="col-md-6">
+
+        <h1 class="mb-2 text-center">Create Account</h1>
+        <p class="text-center text-muted">Create your account and shop with ease.</p>
+
+
+        <form method="post">
+            {% csrf_token %}
+
+            {% if form %}
+                {{ form.as_p }}
+            {% else %}
+                <div class="mb-3">
+                    <label for="id_name" class="form-label">Full Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="id_name"
+                        class="form-control"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="id_email" class="form-label">Email Address</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="id_email"
+                        class="form-control"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="id_password" class="form-label">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="id_password"
+                        class="form-control"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="id_password_confirm" class="form-label">
+                        Confirm Password
+                    </label>
+                    <input
+                        type="password"
+                        name="password_confirm"
+                        id="id_password_confirm"
+                        class="form-control"
+                        required
+                    >
+                </div>
+            {% endif %}
+
+            <button type="submit" class="btn btn-primary w-100">
+                Register
+            </button>
+        </form>
+
+        <p class="mt-3 text-center">
+            Already have an account?
+            <a href="{% url 'login' %}">Login</a>
+        </p>
+
+    </div>
+</div>
+{% endblock %}

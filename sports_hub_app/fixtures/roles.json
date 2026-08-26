@@ -1,0 +1,37 @@
+[
+{
+    "model": "sports_hub_app.role",
+    "pk": "R1",
+    "fields": {
+        "role_name": "Admin"
+    }
+},
+{
+    "model": "sports_hub_app.role",
+    "pk": "R2",
+    "fields": {
+        "role_name": "Manager"
+    }
+},
+{
+    "model": "sports_hub_app.role",
+    "pk": "R3",
+    "fields": {
+        "role_name": "Staff"
+    }
+},
+{
+    "model": "sports_hub_app.role",
+    "pk": "R4",
+    "fields": {
+        "role_name": "Customer Service"
+    }
+},
+{
+    "model": "sports_hub_app.role",
+    "pk": "R5",
+    "fields": {
+        "role_name": "Customer"
+    }
+}
+]

@@ -1,0 +1,32 @@
+[
+{
+    "model": "sports_hub_app.return",
+    "pk": "R1",
+    "fields": {
+        "order": "O1",
+        "product": "P1",
+        "reason": "Product damaged",
+        "status": "Requested"
+    }
+},
+{
+    "model": "sports_hub_app.return",
+    "pk": "R2",
+    "fields": {
+        "order": "O2",
+        "product": "P2",
+        "reason": "Wrong product",
+        "status": "Approved"
+    }
+},
+{
+    "model": "sports_hub_app.return",
+    "pk": "R3",
+    "fields": {
+        "order": "O3",
+        "product": "P3",
+        "reason": "Product defective",
+        "status": "Completed"
+    }
+}
+]

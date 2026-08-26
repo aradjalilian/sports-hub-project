@@ -1,0 +1,87 @@
+main {
+    min-height: calc(100vh - 140px);
+}
+
+.navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.navbar .nav-link {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-sm {
+    padding: 2rem 0;
+}
+
+.section-lg {
+    padding: 6rem 0;
+}
+
+.page-header {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    margin-bottom: 0;
+}
+
+.content-narrow {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-medium {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 2.5rem 0;
+    }
+
+    .section-lg {
+        padding: 4rem 0;
+    }
+
+    .page-header {
+        padding: 1.5rem 0;
+    }
+
+    .navbar-nav {
+        align-items: flex-start;
+    }
+}
