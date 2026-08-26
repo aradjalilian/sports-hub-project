@@ -4,64 +4,27 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="671a84d6-88bf-4b6c-9b39-c8cd411fbcb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/css/components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/css/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/css/pages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/activation_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/forgot_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/totp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/order_history.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/product_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/product_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/refund_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/return_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="671a84d6-88bf-4b6c-9b39-c8cd411fbcb9" name="Changes" comment="Changes made">
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/update_account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/account_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/cart_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/dashboard_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/home_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/order_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/product_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/refund_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/return_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/user_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_resend.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/fixtures/orderitems.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/orderitems.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/fixtures/orders.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/orders.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/fixtures/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/products.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/fixtures/refunds.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/refunds.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/fixtures/returns.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/returns.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/fixtures/roles.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/roles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/fixtures/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/templates/SportsHub/product_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportsHub/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports-hub-project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports-hub-project/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_project/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports-hub-project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports-hub-project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports-hub-project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_project/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/delete_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_project/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +42,7 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -118,29 +82,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/B00163418/IdeaProjects/sports-hub-project/sports_hub_app/templates",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/B00163418/IdeaProjects/sports-hub-project/sports_hub_app/templates&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\templates" />
@@ -168,6 +132,7 @@
     <MESSAGE value="Delete unused comments in settings.py file" />
     <MESSAGE value="- Change auth to custom email User model&#10;- Create models and relationships in models.py&#10;- Create and activate the Python virtual environment&#10;- Add .gitignore file to the root directory" />
     <MESSAGE value="- Created admin and customer users with assigned roles&#10;- Added order administration with relevant order fields&#10;- Created sample sports products for app testing&#10;- Created order model for purchase management&#10;- Added sample returns and refunds for app testing&#10;- Added fixtures for SportShop app data" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Created admin and customer users with assigned roles&#10;- Added order administration with relevant order fields&#10;- Created sample sports products for app testing&#10;- Created order model for purchase management&#10;- Added sample returns and refunds for app testing&#10;- Added fixtures for SportShop app data" />
+    <MESSAGE value="Changes made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes made" />
   </component>
 </project>

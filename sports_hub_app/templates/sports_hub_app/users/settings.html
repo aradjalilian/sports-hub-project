@@ -1,0 +1,50 @@
+{% extends "sports_hub_app/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="settings-container">
+    <h1>Account Settings</h1>
+
+    <div class="settings-card">
+        <ul>
+            <li><a href="{% url 'update_account' %}">Update Account Details</a></li>
+            <li><a href="{% url 'change_password' %}">Change Password</a></li>
+            <li><a href="{% url 'delete_account' %}">Delete Account</a></li>
+        </ul>
+    </div>
+
+    <a href="{% url 'profile' %}" class="btn-back">Back to Profile</a>
+</div>
+
+<style>
+.settings-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+.settings-card {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+}
+.settings-card ul {
+    list-style: none;
+    padding: 0;
+}
+.settings-card li {
+    margin-bottom: 12px;
+}
+.settings-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+.settings-card a:hover {
+    text-decoration: underline;
+}
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+}
+</style>
+{% endblock %}

@@ -1,12 +1,19 @@
 from pathlib import Path
+import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env()
+environ.Env.read_env(BASE_DIR / ".env")
 
 SECRET_KEY = 'django-insecure-%&frb1t@vb*kbktt71$k&reh-q*+pe!#6c!_u_jr97-l*%w4rh'
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+RESEND_API_KEY = env("RESEND_API_KEY")
+RESEND_FROM_EMAIL = env("RESEND_FROM_EMAIL")
 
 INSTALLED_APPS = [
     'django.contrib.admin',

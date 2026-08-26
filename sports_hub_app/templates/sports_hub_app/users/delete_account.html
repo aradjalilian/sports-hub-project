@@ -1,0 +1,48 @@
+{% extends "sports_hub_app/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="delete-container">
+    <h1>Delete Account</h1>
+
+    <p class="warning-text">
+        Are you sure you want to delete your account?  
+        This action cannot be undone.
+    </p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn-danger">Yes, Delete My Account</button>
+    </form>
+
+    <a href="{% url 'settings' %}" class="btn-back">Cancel</a>
+</div>
+
+<style>
+.delete-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+.warning-text {
+    background: #ffe5e5;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.btn-danger {
+    background: #dc3545;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-danger:hover { background: #b52a37; }
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+}
+</style>
+{% endblock %}
