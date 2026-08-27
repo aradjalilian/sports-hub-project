@@ -10,6 +10,7 @@ class Role(models.Model):
     def __str__(self):
         return self.role_name
 
+
 class UserManager(BaseUserManager):
 
     def create_user(self, email, password=None, **extra_fields):
@@ -45,6 +46,7 @@ class UserManager(BaseUserManager):
             **extra_fields
         )
 
+
 class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
@@ -62,6 +64,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         return self.email
 
+
 class Category(models.Model):
     category_id = models.CharField(max_length=10, primary_key=True)
     name = models.CharField(max_length=100, unique=True)
@@ -70,17 +73,26 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Product(models.Model):
+    STATUS_CHOICES = [
+        ("Available", "Available"),
+        ("Out of Stock", "Out of Stock"),
+        ("Discontinued", "Discontinued"),
+    ]
+
     product_id = models.CharField(max_length=10, primary_key=True)
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name="products")
     name = models.CharField(max_length=100)
     description = models.TextField()
+    image = models.ImageField(upload_to="products/", blank=True, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.IntegerField()
-    status = models.CharField(max_length=50)
+    status = models.CharField(max_length=50, choices=STATUS_CHOICES, default="Available")
 
     def __str__(self):
         return self.name
+
 
 class Order(models.Model):
     order_id = models.CharField(max_length=10, primary_key=True)
@@ -91,6 +103,7 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_id
+
 
 class OrderItem(models.Model):
     order = models.ForeignKey(
@@ -108,6 +121,7 @@ class OrderItem(models.Model):
     def __str__(self):
         return f"{self.order.order_id} - {self.product.name}"
 
+
 class Return(models.Model):
     return_id = models.CharField(max_length=10, primary_key=True)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
@@ -118,6 +132,7 @@ class Return(models.Model):
     def __str__(self):
         return self.return_id
 
+
 class Refund(models.Model):
     refund_id = models.CharField(max_length=10, primary_key=True)
     return_request = models.ForeignKey(Return, on_delete=models.CASCADE)
@@ -127,3 +142,11 @@ class Refund(models.Model):
 
     def __str__(self):
         return self.refund_id
+
+class CartItem(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="cart_items")
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField(default=1)
+
+    def __str__(self):
+        return f"{self.user.email} - {self.product.name} ({self.quantity})"

@@ -17,7 +17,7 @@ from sports_hub_app.models import User, Role
 def register(request):
     if request.method == "POST":
         name = request.POST.get("name", "").strip()
-        email = request.POST.get("email", "").strip()
+        email = request.POST.get("email", "").strip().lower()
         password = request.POST.get("password", "")
         password_confirm = request.POST.get("password_confirm", "")
         if not name or not email or not password or password != password_confirm:

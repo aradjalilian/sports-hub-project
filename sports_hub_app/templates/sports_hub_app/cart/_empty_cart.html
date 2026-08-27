@@ -1,0 +1,16 @@
+{% load static %}
+
+<div class="text-center py-5">
+
+    <img src="{% static 'sports_hub_app/images/empty_cart.png' %}"
+         alt="Empty Cart"
+         style="width:120px; opacity:0.8;">
+
+    <h3 class="mt-4">Your cart is empty.</h3>
+
+    <a href="{% url 'product_list' %}"
+       class="btn btn-primary mt-3">
+        Browse Products
+    </a>
+
+</div>

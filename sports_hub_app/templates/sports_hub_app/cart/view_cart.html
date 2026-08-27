@@ -1,0 +1,36 @@
+{% extends "sports_hub_app/base.html" %}
+{% load static %}
+
+{% block title %}Cart | SportsHub{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+
+    <h1 class="text-center mb-4">Cart</h1>
+
+    {% if cart_items %}
+
+        <div class="row">
+            {% for item in cart_items %}
+                {% include "sports_hub_app/cart/_cart_item.html" %}
+            {% endfor %}
+        </div>
+
+        <div class="text-center mt-4">
+            <h4>Total: €{{ total }}</h4>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="{% url 'product_list' %}" class="btn btn-secondary">
+                Continue Shopping
+            </a>
+        </div>
+
+    {% else %}
+
+        {% include "sports_hub_app/cart/_empty_cart.html" %}
+
+    {% endif %}
+
+</div>
+{% endblock %}

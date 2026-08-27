@@ -1,0 +1,33 @@
+{% load static %}
+
+<div class="card h-100 shadow-sm">
+
+    {% if product.image %}
+        <img src="{{ product.image.url }}"
+             class="card-img-top"
+             alt="{{ product.name }}"
+             style="height: 150px; object-fit: contain;">
+    {% endif %}
+
+    <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+
+        <p class="text-muted mb-2">
+            {{ product.description|truncatewords:15 }}
+        </p>
+
+        <p class="fw-bold mb-1">€{{ product.price }}</p>
+        <p class="small mb-1">
+            <strong>Stock:</strong> {{ product.stock }}
+        </p>
+        <p class="small mb-3">
+            <strong>Status:</strong> {{ product.status }}
+        </p>
+
+        <a href="{% url 'product_detail' product.pk %}"
+           class="btn btn-primary w-100">
+            View Details
+        </a>
+    </div>
+
+</div>

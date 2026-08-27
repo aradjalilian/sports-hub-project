@@ -96,6 +96,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR /"sports_hub_app" / "media"
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 OTP_WEBAUTHN_RP_NAME = "Sports Hub"
