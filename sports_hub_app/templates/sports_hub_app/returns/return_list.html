@@ -1,0 +1,41 @@
+{% extends "sports_hub_app/base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">My Returns</h1>
+
+    {% if returns %}
+        {% for return_request in returns %}
+            <div class="return-card">
+                <h2>Return #{{ return_request.return_id }}</h2>
+
+                <p>
+                    <strong>Order:</strong>
+                    #{{ return_request.order.order_id }}
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+                    {{ return_request.status }}
+                </p>
+
+                <p>
+                    <strong>Reason:</strong>
+                    {{ return_request.reason }}
+                </p>
+
+                <p>
+                    <strong>Date:</strong>
+                    {{ return_request.created_at }}
+                </p>
+
+                <a href="{% url 'return_detail' return_request.return_id %}">
+                    View Return
+                </a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="text-center">You have no return requests.</p>
+    {% endif %}
+</div>
+{% endblock %}

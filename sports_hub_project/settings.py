@@ -6,14 +6,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env(BASE_DIR / ".env")
 
-SECRET_KEY = 'django-insecure-%&frb1t@vb*kbktt71$k&reh-q*+pe!#6c!_u_jr97-l*%w4rh'
+SECRET_KEY = env("SECRET_KEY")
 
-DEBUG = True
+DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = []
-
-RESEND_API_KEY = env("RESEND_API_KEY")
-RESEND_FROM_EMAIL = env("RESEND_FROM_EMAIL")
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["localhost", "127.0.0.1"])
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -23,8 +20,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sports_hub_app.apps.SportsHubConfig',
-    'django_otp',
-    'django_otp.plugins.otp_totp',
 ]
 
 MIDDLEWARE = [
@@ -33,7 +28,6 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django_otp.middleware.OTPMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
@@ -43,8 +37,6 @@ ROOT_URLCONF = 'sports_hub_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -59,14 +51,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'sports_hub_project.wsgi.application'
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sports_hub_db',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
-        'PORT': '5432'
-    }
+    "default": env.db("DATABASE_URL")
 }
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -94,13 +79,11 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "sports_hub_app" / "staticfiles"
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR /"sports_hub_app" / "media"
+MEDIA_ROOT = BASE_DIR / "media"
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-OTP_WEBAUTHN_RP_NAME = "Sports Hub"
-OTP_WEBAUTHN_RP_ID = "localhost"
-OTP_WEBAUTHN_ALLOWED_ORIGINS = ["http://localhost:8000"]
+AGENTMAIL_API_KEY = env("AGENTMAIL_API_KEY")
+AGENTMAIL_INBOX_ID = env("AGENTMAIL_INBOX_ID")

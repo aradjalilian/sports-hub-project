@@ -1,21 +1,35 @@
 {% extends "sports_hub_app/base.html" %}
-{% load static %}
 
 {% block title %}Edit {{ product.name }} | SportsHub{% endblock %}
 
 {% block content %}
 <div class="container py-4">
-    <h1 class="mb-4">Edit Product</h1>
 
-    <form method="POST" enctype="multipart/form-data" class="card p-4 shadow-sm">
+    <h1 class="mb-4 text-center">Edit Product</h1>
+
+    <form
+        method="POST"
+        enctype="multipart/form-data"
+        class="card p-4 shadow-sm"
+    >
         {% csrf_token %}
+
         {{ form.as_p }}
 
-        <button class="btn btn-primary w-100 mt-3">Save Changes</button>
+        <button
+            type="submit"
+            class="btn btn-primary w-100 mt-3"
+        >
+            Save Changes
+        </button>
     </form>
 
-    <a href="{% url 'product_detail' product.id %}" class="btn btn-secondary w-100 mt-3">
+    <a
+        href="{% url 'product_detail' product.id %}"
+        class="btn btn-secondary w-100 mt-3"
+    >
         Back to Product
     </a>
+
 </div>
 {% endblock %}

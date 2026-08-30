@@ -1,48 +1,46 @@
 {% extends "sports_hub_app/base.html" %}
-{% load static %}
 
 {% block content %}
-<div class="profile-container">
-    <h1>Your Profile</h1>
+<div class="container mt-4">
+    <div class="profile-container text-center">
+        <h1>Your Profile</h1>
 
-    <div class="profile-card">
-        <p><strong>Name:</strong> {{ request.user.name }}</p>
-        <p><strong>Email:</strong> {{ request.user.email }}</p>
-        <p><strong>Role:</strong> {{ request.user.role.name }}</p>
-    </div>
+        <div class="profile-card">
+            {% if request.user.profile_picture %}
+                <img
+                    src="{{ request.user.profile_picture.url }}"
+                    class="profile-photo"
+                    alt="Profile picture"
+                >
+            {% endif %}
 
-    <div class="profile-actions">
-        <a href="{% url 'update_account' %}" class="btn-primary">Update Account</a>
-        <a href="{% url 'change_password' %}" class="btn-secondary">Change Password</a>
-        <a href="{% url 'settings' %}" class="btn-secondary">Settings</a>
-        <a href="{% url 'delete_account' %}" class="btn-danger">Delete Account</a>
+            <p><strong>Name:</strong> {{ request.user.name }}</p>
+            <p><strong>Email:</strong> {{ request.user.email }}</p>
+            <p><strong>Role:</strong> {{ request.user.role.role_name }}</p>
+        </div>
+
+        <div class="profile-actions">
+    <a href="{% url 'update_account' %}" class="btn-primary">
+        Edit Profile
+    </a>
+
+    <a href="{% url 'change_password' %}" class="btn-secondary">
+        Change Password
+    </a>
+
+    <a href="{% url 'settings' %}" class="btn-secondary">
+        Settings
+    </a>
+
+    <a href="{% url 'dashboard' %}" class="btn-secondary">
+        Back to Dashboard
+    </a>
+
+    <a href="{% url 'delete_account' %}" class="btn-danger">
+        Delete Account
+    </a>
+</div>
+        </div>
     </div>
 </div>
-
-<style>
-.profile-container {
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
-}
-.profile-card {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-.profile-actions a {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-}
-.btn-primary { background: #007bff; color: white; }
-.btn-secondary { background: #6c757d; color: white; }
-.btn-danger { background: #dc3545; color: white; }
-.btn-primary:hover { background: #0056b3; }
-.btn-secondary:hover { background: #5a6268; }
-.btn-danger:hover { background: #b52a37; }
-</style>
 {% endblock %}

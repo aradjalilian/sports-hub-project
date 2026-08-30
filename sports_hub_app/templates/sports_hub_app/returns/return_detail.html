@@ -1,0 +1,44 @@
+{% extends "sports_hub_app/base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">Return Details</h1>
+
+    <div class="return-card">
+        <h2>Return #{{ return_request.return_id }}</h2>
+
+        <p>
+            <strong>Order:</strong>
+            #{{ return_request.order.order_id }}
+        </p>
+
+        <p>
+            <strong>Status:</strong>
+            {{ return_request.status }}
+        </p>
+
+        <p>
+            <strong>Reason:</strong>
+            {{ return_request.reason }}
+        </p>
+
+        <p>
+            <strong>Requested:</strong>
+            {{ return_request.created_at }}
+        </p>
+
+        {% if return_request.updated_at %}
+            <p>
+                <strong>Last Updated:</strong>
+                {{ return_request.updated_at }}
+            </p>
+        {% endif %}
+    </div>
+
+    <div class="text-center">
+        <a href="{% url 'return_list' %}">
+            Back to Returns
+        </a>
+    </div>
+</div>
+{% endblock %}

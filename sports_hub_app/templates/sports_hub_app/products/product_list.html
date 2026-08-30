@@ -5,6 +5,7 @@
 
 {% block content %}
 <div class="container py-4">
+
     <h1 class="mb-4 text-center">Products</h1>
 
     <div class="row">
@@ -14,13 +15,17 @@
             </div>
         {% empty %}
             <div class="text-center py-5">
-                <img src="{% static 'sports_hub_app/images/empty_products.png' %}" 
-                     alt="No Products" 
-                     width="120" 
-                     class="opacity-75 mb-3">
+                <img
+                    src="{% static 'sports_hub_app/images/empty_products.png' %}"
+                    alt="No Products"
+                    width="120"
+                    class="opacity-75 mb-3"
+                >
+
                 <h4>No products available</h4>
             </div>
         {% endfor %}
     </div>
+
 </div>
 {% endblock %}

@@ -1,6 +1,5 @@
 from django.urls import path
 from . import views
-from sports_hub_app.views.cart_views import increase_quantity, decrease_quantity
 
 urlpatterns = [
     path("", views.home, name="home"),
@@ -8,7 +7,6 @@ urlpatterns = [
     path("register/", views.register, name="register"),
     path("activate/<uidb64>/<token>/", views.activate_account, name="activate_account"),
     path("login/", views.login, name="login"),
-    path("totp/", views.totp, name="totp"),
     path("logout/", views.logout, name="logout"),
     path("forgot-password/", views.forgot_password, name="forgot_password"),
     path("change-password/", views.change_password, name="change_password"),
@@ -17,17 +15,20 @@ urlpatterns = [
     path("settings/", views.settings, name="settings"),
     path("profile/delete/", views.delete_account, name="delete_account"),
     path("dashboard/", views.dashboard, name="dashboard"),
+
     path("products/", views.product_list, name="product_list"),
     path("products/create/", views.product_create, name="product_create"),
     path("products/search/", views.product_search, name="product_search"),
     path("products/<str:pk>/", views.product_detail, name="product_detail"),
     path("products/<str:pk>/edit/", views.product_edit, name="product_edit"),
     path("products/<str:pk>/delete/", views.product_delete, name="product_delete"),
+
+    path("cart/", views.view_cart, name="view_cart"),
     path("cart/add/<str:pk>/", views.add_to_cart, name="add_to_cart"),
     path("cart/remove/<int:pk>/", views.remove_from_cart, name="remove_from_cart"),
-    path('cart/increase/<int:item_id>/', increase_quantity, name='increase_quantity'),
-    path('cart/decrease/<int:item_id>/', decrease_quantity, name='decrease_quantity'),
-    path("cart/", views.view_cart, name="view_cart"),
+    path("cart/increase/<int:item_id>/", views.increase_quantity, name="increase_quantity"),
+    path("cart/decrease/<int:item_id>/", views.decrease_quantity, name="decrease_quantity"),
+
     path("orders/", views.orders, name="orders"),
     path("returns/", views.returns, name="returns"),
     path("refunds/", views.refunds, name="refunds"),

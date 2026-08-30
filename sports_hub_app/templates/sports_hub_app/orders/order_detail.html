@@ -1,0 +1,62 @@
+{% extends "sports_hub_app/base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">Order Details</h1>
+
+    <div class="order-card">
+        <h2>Order #{{ order.order_id }}</h2>
+
+        <p>
+            <strong>Status:</strong>
+            {{ order.status }}
+        </p>
+
+        <p>
+            <strong>Date:</strong>
+            {{ order.created_at }}
+        </p>
+
+        <h2>Order Items</h2>
+
+        {% if order_items %}
+            {% for item in order_items %}
+                <div class="order-item">
+                    <p>
+                        <strong>Product:</strong>
+                        {{ item.product.name }}
+                    </p>
+
+                    <p>
+                        <strong>Quantity:</strong>
+                        {{ item.quantity }}
+                    </p>
+
+                    <p>
+                        <strong>Price:</strong>
+                        €{{ item.price }}
+                    </p>
+
+                    <p>
+                        <strong>Subtotal:</strong>
+                        €{{ item.subtotal }}
+                    </p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No items found for this order.</p>
+        {% endif %}
+
+        <p>
+            <strong>Total:</strong>
+            €{{ order.total_amount }}
+        </p>
+    </div>
+
+    <div class="text-center">
+        <a href="{% url 'order_list' %}">
+            Back to Orders
+        </a>
+    </div>
+</div>
+{% endblock %}

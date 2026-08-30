@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsHub Refund Update</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f6f8; font-family: Arial, sans-serif;">
+
+<div style="max-width: 600px; margin: 40px auto; background-color: #ffffff; padding: 40px; border-radius: 8px;">
+
+    <h1 style="margin-top: 0; color: #212529; text-align: center;">
+        Refund Update
+    </h1>
+
+    <p style="font-size: 16px; color: #495057; text-align: center;">
+        Hello {{ user.name }},
+    </p>
+
+    <p style="font-size: 16px; color: #495057; line-height: 1.6; text-align: center;">
+        There has been an update to your SportsHub refund request.
+    </p>
+
+    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 6px; margin: 25px 0;">
+        <p style="font-size: 15px; color: #495057;">
+            <strong>Refund Number:</strong> #{{ refund.refund_id }}
+        </p>
+
+        <p style="font-size: 15px; color: #495057;">
+            <strong>Order:</strong> #{{ refund.order.order_id }}
+        </p>
+
+        <p style="font-size: 15px; color: #495057;">
+            <strong>Status:</strong> {{ refund.status }}
+        </p>
+
+        <p style="font-size: 15px; color: #495057;">
+            <strong>Amount:</strong> €{{ refund.amount }}
+        </p>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <a
+            href="{{ refund_url }}"
+            style="display: inline-block; padding: 12px 24px; background-color: #0d6efd; color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 16px;"
+        >
+            View Refund
+        </a>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #dee2e6; margin: 30px 0;">
+
+    <p style="font-size: 13px; color: #6c757d; text-align: center; margin-bottom: 0;">
+        © 2026 SportsHub. All rights reserved.
+    </p>
+
+</div>
+
+</body>
+</html>

@@ -10,7 +10,6 @@ class Role(models.Model):
     def __str__(self):
         return self.role_name
 
-
 class UserManager(BaseUserManager):
 
     def create_user(self, email, password=None, **extra_fields):
@@ -97,13 +96,12 @@ class Product(models.Model):
 class Order(models.Model):
     order_id = models.CharField(max_length=10, primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    order_date = models.DateField()
+    order_date = models.DateTimeField(default=timezone.now)
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.CharField(max_length=50)
 
     def __str__(self):
         return self.order_id
-
 
 class OrderItem(models.Model):
     order = models.ForeignKey(
@@ -137,7 +135,7 @@ class Refund(models.Model):
     refund_id = models.CharField(max_length=10, primary_key=True)
     return_request = models.ForeignKey(Return, on_delete=models.CASCADE)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
-    refund_date = models.DateField()
+    refund_date = models.DateTimeField(default=timezone.now)
     status = models.CharField(max_length=50)
 
     def __str__(self):
@@ -150,3 +148,4 @@ class CartItem(models.Model):
 
     def __str__(self):
         return f"{self.user.email} - {self.product.name} ({self.quantity})"
+

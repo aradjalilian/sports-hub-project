@@ -1,5 +1,4 @@
 {% extends "sports_hub_app/base.html" %}
-{% load static %}
 
 {% block title %}Cart | SportsHub{% endblock %}
 
@@ -21,7 +20,10 @@
         </div>
 
         <div class="text-center mt-4">
-            <a href="{% url 'product_list' %}" class="btn btn-secondary">
+            <a
+                href="{% url 'product_list' %}"
+                class="btn btn-secondary"
+            >
                 Continue Shopping
             </a>
         </div>

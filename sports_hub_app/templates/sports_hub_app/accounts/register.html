@@ -7,61 +7,22 @@
     <div class="col-md-6">
 
         <h1 class="mb-2 text-center">Create Account</h1>
-        <p class="text-center text-muted">Create your account and shop with ease.</p>
 
+        <p class="text-center text-muted">
+            Create your account and shop with ease.
+        </p>
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
 
         <form method="post">
             {% csrf_token %}
-
-            {% if form %}
-                {{ form.as_p }}
-            {% else %}
-                <div class="mb-3">
-                    <label for="id_name" class="form-label">Full Name</label>
-                    <input
-                        type="text"
-                        name="name"
-                        id="id_name"
-                        class="form-control"
-                        required
-                    >
-                </div>
-
-                <div class="mb-3">
-                    <label for="id_email" class="form-label">Email Address</label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="id_email"
-                        class="form-control"
-                        required
-                    >
-                </div>
-
-                <div class="mb-3">
-                    <label for="id_password" class="form-label">Password</label>
-                    <input
-                        type="password"
-                        name="password"
-                        id="id_password"
-                        class="form-control"
-                        required
-                    >
-                </div>
-
-                <div class="mb-3">
-                    <label for="id_password_confirm" class="form-label">
-                        Confirm Password
-                    </label>
-                    <input
-                        type="password"
-                        name="password_confirm"
-                        id="id_password_confirm"
-                        class="form-control"
-                        required
-                    >
-                </div>
-            {% endif %}
+            {{ form.as_p }}
 
             <button type="submit" class="btn btn-primary w-100">
                 Register

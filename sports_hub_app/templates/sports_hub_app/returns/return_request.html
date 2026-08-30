@@ -1,0 +1,23 @@
+{% extends "sports_hub_app/base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">Request a Return</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">
+            Submit Return Request
+        </button>
+    </form>
+
+    <div class="text-center">
+        <a href="{% url 'return_list' %}">
+            Back to Returns
+        </a>
+    </div>
+</div>
+{% endblock %}

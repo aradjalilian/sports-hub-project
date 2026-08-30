@@ -1,0 +1,41 @@
+{% extends "sports_hub_app/base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">My Refunds</h1>
+
+    {% if refunds %}
+        {% for refund in refunds %}
+            <div class="refund-card">
+                <h2>Refund #{{ refund.refund_id }}</h2>
+
+                <p>
+                    <strong>Order:</strong>
+                    #{{ refund.order.order_id }}
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+                    {{ refund.status }}
+                </p>
+
+                <p>
+                    <strong>Amount:</strong>
+                    €{{ refund.amount }}
+                </p>
+
+                <p>
+                    <strong>Date:</strong>
+                    {{ refund.created_at }}
+                </p>
+
+                <a href="{% url 'refund_detail' refund.refund_id %}">
+                    View Refund
+                </a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="text-center">You have no refund requests.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,62 +1,67 @@
 [
-{
-    "model": "sports_hub_app.product",
-    "pk": "P1",
-    "fields": {
-        "category": "C1",
-        "name": "Football",
-        "description": "Official football for training matches",
-        "price": "20.00",
-        "stock": 100,
-        "status": "Available"
+    {
+        "model": "sports_hub_app.product",
+        "pk": "P1",
+        "fields": {
+            "category": "C1",
+            "name": "Football",
+            "description": "Official football for training matches",
+            "image": "products/football.png",
+            "price": "20.00",
+            "stock": 100,
+            "status": "Available"
+        }
+    },
+    {
+        "model": "sports_hub_app.product",
+        "pk": "P2",
+        "fields": {
+            "category": "C2",
+            "name": "Basketball",
+            "description": "Strong basketball for indoor games",
+            "image": "products/basketball.png",
+            "price": "30.00",
+            "stock": 200,
+            "status": "Available"
+        }
+    },
+    {
+        "model": "sports_hub_app.product",
+        "pk": "P3",
+        "fields": {
+            "category": "C3",
+            "name": "Tennis Racket",
+            "description": "Lightweight racket for competitive tennis",
+            "image": "products/tennis_racket.png",
+            "price": "40.00",
+            "stock": 300,
+            "status": "Available"
+        }
+    },
+    {
+        "model": "sports_hub_app.product",
+        "pk": "P4",
+        "fields": {
+            "category": "C4",
+            "name": "Running Shoes",
+            "description": "Comfortable shoes for everyday running",
+            "image": "products/running_shoes.png",
+            "price": "50.00",
+            "stock": 400,
+            "status": "Available"
+        }
+    },
+    {
+        "model": "sports_hub_app.product",
+        "pk": "P5",
+        "fields": {
+            "category": "C1",
+            "name": "Football Jersey",
+            "description": "Comfortable jersey for football matches",
+            "image": "products/football_jersey.png",
+            "price": "60.00",
+            "stock": 500,
+            "status": "Available"
+        }
     }
-},
-{
-    "model": "sports_hub_app.product",
-    "pk": "P2",
-    "fields": {
-        "category": "C2",
-        "name": "Basketball",
-        "description": "Strong basketball for indoor games",
-        "price": "30.00",
-        "stock": 200,
-        "status": "Available"
-    }
-},
-{
-    "model": "sports_hub_app.product",
-    "pk": "P3",
-    "fields": {
-        "category": "C3",
-        "name": "Tennis Racket",
-        "description": "Lightweight racket for competitive tennis",
-        "price": "40.00",
-        "stock": 300,
-        "status": "Available"
-    }
-},
-{
-    "model": "sports_hub_app.product",
-    "pk": "P4",
-    "fields": {
-        "category": "C4",
-        "name": "Running Shoes",
-        "description": "Comfortable shoes for everyday running",
-        "price": "50.00",
-        "stock": 400,
-        "status": "Available"
-    }
-},
-{
-    "model": "sports_hub_app.product",
-    "pk": "P5",
-    "fields": {
-        "category": "C1",
-        "name": "Football Jersey",
-        "description": "Comfortable jersey for football matches",
-        "price": "60.00",
-        "stock": 500,
-        "status": "Available"
-    }
-}
 ]

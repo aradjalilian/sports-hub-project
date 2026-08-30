@@ -4,7 +4,13 @@ from sports_hub_app.forms import ProductForm
 
 
 def product_list(request):
-    products = Product.objects.all()
+    category_name = request.GET.get("category")
+
+    if category_name:
+        products = Product.objects.filter(category__name=category_name)
+    else:
+        products = Product.objects.all()
+
     return render(
         request,
         "sports_hub_app/products/product_list.html",
@@ -14,15 +20,18 @@ def product_list(request):
 
 def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
+
     return render(
         request,
         "sports_hub_app/products/product_detail.html",
         {"product": product}
     )
 
+
 def product_create(request):
     if request.method == "POST":
         form = ProductForm(request.POST, request.FILES)
+
         if form.is_valid():
             form.save()
             return redirect("product_list")
@@ -40,7 +49,12 @@ def product_edit(request, pk):
     product = get_object_or_404(Product, pk=pk)
 
     if request.method == "POST":
-        form = ProductForm(request.POST, request.FILES, instance=product)
+        form = ProductForm(
+            request.POST,
+            request.FILES,
+            instance=product
+        )
+
         if form.is_valid():
             form.save()
             return redirect("product_detail", pk=pk)
@@ -50,7 +64,10 @@ def product_edit(request, pk):
     return render(
         request,
         "sports_hub_app/products/product_edit.html",
-        {"form": form, "product": product}
+        {
+            "form": form,
+            "product": product
+        }
     )
 
 
@@ -70,10 +87,16 @@ def product_delete(request, pk):
 
 def product_search(request):
     query = request.GET.get("q", "")
-    results = Product.objects.filter(name__icontains=query)
+
+    results = Product.objects.filter(
+        name__icontains=query
+    )
 
     return render(
         request,
         "sports_hub_app/products/product_search.html",
-        {"results": results, "query": query}
+        {
+            "results": results,
+            "query": query
+        }
     )

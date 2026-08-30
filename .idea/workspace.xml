@@ -5,47 +5,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="671a84d6-88bf-4b6c-9b39-c8cd411fbcb9" name="Changes" comment="Changes made">
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/media/products/basketball.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/media/products/football.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/media/products/football_jersey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/media/products/running_shoes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/media/products/tennis_racket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/cart_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/delete_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/empty_cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/_cart_item.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/_empty_cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/view_cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/cartitems.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/emails/activation_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/emails/forgot_password_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/emails/order_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/emails/refund_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/emails/return_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/orders/order_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/orders/order_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/orders/order_request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/refunds/refund_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/refunds/refund_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/refunds/refund_request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/returns/return_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/returns/return_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/returns/return_request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/tests/test_forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/tests/test_integation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/tests/test_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/tests/test_use_cases.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/tests/test_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports_hub_app/views/profile_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/Screenshot_2026-08-27_001351.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/Screenshot_2026-08-27_001351_GByrtJY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/fixtures/orders.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/orders.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/fixtures/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/fixtures/refunds.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/fixtures/refunds.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sports_hub_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/media/products/basketball.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/products/basketball.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/media/products/football.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/products/football.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/media/products/football_jersey.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/products/football_jersey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/media/products/running_shoes.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/products/running_shoes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/media/products/tennis_racket.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/products/tennis_racket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/migrations/0002_cartitem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/migrations/0003_product_image.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sports_hub_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/icons/android-chrome-192x192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/icons/android-chrome-512x512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/icons/apple-touch-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/icons/favicon-16x16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/icons/favicon-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/icons/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/images/icons/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/icons/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/activation_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/activation_email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/css/pages.css" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/static/sports_hub_app/css/pages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/activation_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/forgot_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/forgot_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/accounts/totp.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/product_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/product_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/_cart_item.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/_cart_item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/_empty_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/_empty_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/view_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/cart/view_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/order_history.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/products/product_search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/refund_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/return_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/delete_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/delete_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/update_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/templates/sports_hub_app/users/update_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/tests.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sports_hub_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/views/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sports_hub_app/views/account_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/views/account_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_app/views/cart_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/views/cart_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sports_hub_app/views/product_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_app/views/product_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_hub_app/views/user_views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sports_hub_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports_hub_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sports_hub_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_resend.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,16 +89,16 @@
   </component>
   <component name="DatabaseLocalColorSettings">
     <colors>
-      <entry key="9bc40d86-6083-43c9-9487-3d6668af5328" value="" />
+      <entry key="b86fbf8b-9657-4b59-9cbd-22ed46e3ab25" value="" />
     </colors>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="Python Unit Test" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -86,7 +121,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/aradjalilian/sportshop_project.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/aradjalilian/sports-hub-project.git&quot;,
     &quot;accountId&quot;: &quot;39c29404-d5eb-4d16-a844-9f18f71fab46&quot;
   }
 }</component>
@@ -103,38 +138,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/B00163418/IdeaProjects/sports-hub-project/sports_hub_app/media/products",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-git.bad.executable&quot;: &quot;Git is not installed&quot;,
+    &quot;Notification.DoNotAsk-git.bad.executable&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/B00163418/IdeaProjects/sports-hub-project/sports_hub_app/templates/sports_hub_app/users&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\media\products" />
+      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\templates\sports_hub_app\users" />
+      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\media" />
       <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\static\sports_hub_app\images" />
-      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\static\sports_hub_app" />
-      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\templates" />
-      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\templates\sports_hub_app" />
+      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\templates\sports_hub_app\accounts" />
+      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\static\sports_hub_app\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\static\sports_hub_app\icons" />
+      <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project\sports_hub_app\static\sports_hub_app\css" />
       <recent name="C:\Users\B00163418\IdeaProjects\sports-hub-project" />
     </key>
   </component>
@@ -147,6 +186,17 @@
       <updated>1786389986909</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update database settings to use PostGreSQL" />
