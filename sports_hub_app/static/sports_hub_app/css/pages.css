@@ -1,3 +1,4 @@
+
 .home-hero {
     padding: 5rem 1rem;
     text-align: center;
@@ -28,7 +29,7 @@
     background-color: #ffffff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
 }
 
 .auth-container h1 {
@@ -58,104 +59,85 @@
 
 .profile-card {
     padding: 2rem;
+    margin-top: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
 }
 
-.profile-field {
-    margin-bottom: 1rem;
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
 }
 
-.profile-field:last-child {
-    margin-bottom: 0;
+.profile-card p {
+    margin-bottom: 0.75rem;
 }
 
-.profile-label {
+.profile-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 1.5rem;
+}
+
+.profile-actions a,
+.profile-danger a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
     font-weight: 600;
-    margin-bottom: 0.25rem;
+    text-align: center;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.dashboard-card {
-    height: 100%;
+.profile-actions a:hover,
+.profile-danger a:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
 }
 
-.dashboard-stat {
-    font-size: 2rem;
-    font-weight: 700;
+.profile-actions .btn-primary {
+    background-color: #0d6efd;
+    color: #ffffff;
 }
 
-.products-grid {
-    row-gap: 1.5rem;
+.profile-actions .btn-secondary {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #dee2e6;
 }
 
-.product-detail-image {
-    width: 100%;
-    max-height: 500px;
-    object-fit: contain;
+.profile-danger {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
 }
 
-.product-price {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.product-stock {
-    font-weight: 500;
-}
-
-.cart-container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.cart-summary {
-    padding: 1.5rem;
-}
-
-.cart-total {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.orders-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.order-card {
-    margin-bottom: 1.5rem;
-}
-
-.order-total {
-    font-weight: 700;
-}
-
-.returns-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.return-card {
-    margin-bottom: 1.5rem;
-}
-
-.refunds-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.refund-card {
-    margin-bottom: 1.5rem;
+.profile-danger .btn-danger {
+    background-color: #dc3545;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
-    .home-hero {
-        padding: 3.5rem 1rem;
-    }
-
-    .home-hero h1 {
-        font-size: 2.25rem;
-    }
-
     .profile-card {
         padding: 1.25rem;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-actions a,
+    .profile-danger a {
+        width: 100%;
+        max-width: 280px;
     }
 }
