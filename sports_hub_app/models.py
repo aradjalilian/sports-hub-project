@@ -148,4 +148,3 @@ class CartItem(models.Model):
 
     def __str__(self):
         return f"{self.user.email} - {self.product.name} ({self.quantity})"
-

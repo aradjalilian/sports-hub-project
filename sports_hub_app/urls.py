@@ -14,7 +14,11 @@ urlpatterns = [
     path("profile/update/", views.update_account, name="update_account"),
     path("settings/", views.settings, name="settings"),
     path("profile/delete/", views.delete_account, name="delete_account"),
-    path("dashboard/", views.dashboard, name="dashboard"),
+    path("dashboard/admin/", views.admin_dashboard, name="admin_dashboard"),
+    path("dashboard/manager/", views.manager_dashboard, name="manager_dashboard"),
+    path("dashboard/staff/", views.staff_dashboard, name="staff_dashboard"),
+    path("dashboard/customer-service/", views.customer_service_dashboard, name="customer_service_dashboard"),
+    path("dashboard/customer/", views.customer_dashboard, name="customer_dashboard"),
 
     path("products/", views.product_list, name="product_list"),
     path("products/create/", views.product_create, name="product_create"),

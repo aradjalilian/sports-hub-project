@@ -143,6 +143,7 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = [
+            "product_id",
             "name",
             "category",
             "description",
@@ -153,6 +154,9 @@ class ProductForm(forms.ModelForm):
         ]
 
         widgets = {
+            "product_id": forms.TextInput(
+                attrs={"class": "form-control"}
+            ),
             "name": forms.TextInput(
                 attrs={"class": "form-control"}
             ),
